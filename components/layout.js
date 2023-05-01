@@ -27,32 +27,32 @@ export default function Layout({ children, home }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </Head>
       <Script src='background.js'> </Script>
-        <div id="particles-js">
-          <header className={styles.header}>
-  
-            <h1 className={styles.headerH1}> {myName}</h1>
-  
-            <nav>
-              <ul className={styles.navUl}>
-                <li className={styles.navLi}> <Link href='#about'>About</Link></li>
-                <li className={styles.navLi}><Link href='#projects'>Projects</Link></li>
-                <li className={styles.navLi}><Link href='#experience'>Experience</Link> </li>
-                <li className={styles.navLi}><Link href='#contact'>Contact</Link> </li>
-              </ul>
-            </nav>
-  
-          </header>
-          <main>{children}</main>
-  
-          {/*<!-- particles.js container --> */}
-          {/*<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> */}
-          <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
-          {!home && (
-            <div className={styles.backToHome}>
-              <Link href="/">← Back to home</Link>
-            </div>
-          )}
-        </div>
+      <div id="particles-js">
+        <header className={styles.header}>
+
+          <h1 className={styles.headerH1}> {myName}</h1>
+
+          <nav>
+            <ul className={styles.navUl}>
+              <li className={styles.navLi}> <Link href='#about'>About</Link></li>
+              <li className={styles.navLi}><Link href='#projects'>Projects</Link></li>
+              <li className={styles.navLi}><Link href='#experience'>Experience</Link> </li>
+              <li className={styles.navLi}><Link href='#contact'>Contact</Link> </li>
+            </ul>
+          </nav>
+
+        </header>
+        <main>{children}</main>
+
+        {/*<!-- particles.js container --> */}
+        {/*<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> */}
+        <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">← Back to home</Link>
+          </div>
+        )}
+      </div>
     </div>
 
   )
