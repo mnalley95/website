@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
+//import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import Script from 'next/script';
-import headshot from '../public/headshot.jpg';
+//import headshot from '../public/headshot.jpg';
 
 
 
@@ -15,11 +15,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <main className={styles.body}>
-      <Image
-        src={headshot}
-        alt="Headshot"
-        className={styles.headshot}
-      />
+        <img src='/headshot.jpg' alt="My headshot" className={styles.headshot} />
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
 
