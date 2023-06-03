@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
           `}
         </script>
 
-        <script src="/particles.js"></script>
+        <script src="/particles.js" defer></script>
         <meta charSet="UTF-8" />
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
