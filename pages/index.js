@@ -29,7 +29,7 @@ export default function Home() {
           <h2>Projects</h2>
           Some of my work:
           <ul>
-            <li>Automated demand forecasting package that uses statistical models and machine learning to accurately project demand for hundreds of SKUs across more than 100 distribution points, accounting for $750m in annual revenue</li>
+            <li>Automated demand forecasting package that uses statistical models and machine learning (XGBoost, Prophet) to accurately project demand for hundreds of SKUs across more than 100 distribution points, accounting for $750m in annual revenue</li>
             <li>Dashboarding, analytics, and reporting suites serving hundreds of users that consolidate data from multiple different sources, saving team members time and enabling them to make better decisions. ETL pipelines in SQL and Python, frontend in Tableau, PowerBI, Streamlit</li>
             <li>This website, initially built using Django, and since rebuilt using React.js</li>
           </ul>
