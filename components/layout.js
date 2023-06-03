@@ -12,22 +12,22 @@ export default function Layout({ children, home }) {
     <div>
       <Head>
         {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43" />
-        <Script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43" />
+        <script>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-WKSYHTRV43');
           `}
-        </Script>
+        </script>
         <meta charSet="UTF-8" />
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
       </Head>
-      <Script src='background.js'> </Script>
+      <Script id='particlebackground' src='background.js'> </Script>
       <div id="particles-js">
         <header className={styles.header}>
 
@@ -47,7 +47,7 @@ export default function Layout({ children, home }) {
 
         {/*<!-- particles.js container --> */}
         {/*<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> */}
-        <Script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
+        <Script id='particles' src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">← Back to home</Link>

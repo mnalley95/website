@@ -19,9 +19,9 @@ export default function Home() {
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
 
-          <p>I'm currently working in Operations at Apple, after a few stints working in Operations and Supply Chain roles at CPG companies in Atlanta.</p>
+          <p>I&apos;m currently working in Operations at Apple, after a few stints working in Operations and Supply Chain roles at CPG companies in Atlanta.</p>
 
-          <p>My creative outlets are data science and software development. I'm a self-taught developer, and have used my skills to build tools to make my coworkers and I work more efficiently.</p>
+          <p>My creative outlets are data science and software development. I&apos;m a self-taught developer, and have used my skills to build tools to make my coworkers and I work more efficiently.</p>
 
         </section>
 

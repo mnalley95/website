@@ -125,16 +125,10 @@
 
 .headshot {
     display: block;
-    margin: 10px auto 0 auto;
+    margin: 20px auto;
     max-width: 10%;
     height: auto;
     align-items: center;
     border-radius: 6px;
-
-    box-sizing: border-box;
-
-
-    
-
 
 }
