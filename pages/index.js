@@ -72,7 +72,7 @@ export default function Home() {
 
 
 
-        <Script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></Script>
+        <Script src="https://platform.linkedin.com/badges/js/profile.js" strategy='lazyOnload' async defer type="text/javascript"></Script>
         <Script async defer src="https://buttons.github.io/buttons.js"></Script>
 
       </main>
