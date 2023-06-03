@@ -21,14 +21,13 @@ export default function Layout({ children, home }) {
             gtag('config', 'G-WKSYHTRV43');
           `}
         </script>
-
-        <script src="/particles.js" defer></script>
         <meta charSet="UTF-8" />
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
       </Head>
+      <Script id='particlebackground' src='background.js'> </Script>
       <div id="particles-js">
         <header className={styles.header}>
 
