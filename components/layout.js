@@ -27,7 +27,7 @@ export default function Layout({ children, home }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
       </Head>
-      <Script id='particlebackground' src='background.js'> </Script>
+      <Script id='particlebackground' src='particles.js'> </Script>
       <div id="particles-js">
         <header className={styles.header}>
 
