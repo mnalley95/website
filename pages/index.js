@@ -38,7 +38,7 @@ export default function Home() {
         <section id="experience" className={styles.section}>
           <h2>Experience</h2>
           <ul>
-            <li>Worldwide Supply Demand Management at Apple</li>
+            <li>Worldwide Supply Demand Management at <Link href="https://www.apple.com">Apple</Link></li>
             <li>Senior Manager, Demand Planning at <Link href="https://www.kikcorp.com">KIK Consumer Products</Link>
             </li>
             <li>Demand Planning at <Link href="https://primowatercorp.com/about-us/">Primo Water Corporation</Link>
