@@ -28,7 +28,7 @@ export default function Layout({ children, home }) {
 
       </Head>
       <Script id='particlebackground' src='particles.js'> </Script>
-      <div id="particles-js">
+      <div id="tsparticles">
         <header className={styles.header}>
 
           <h1 className={styles.headerH1}> {myName}</h1>
@@ -47,7 +47,8 @@ export default function Layout({ children, home }) {
 
         {/*<!-- particles.js container --> */}
         {/*<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> */}
-        <Script id='particles' src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></Script>
+        <Script id='tsparticles' src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.5/dist/tsparticles.min.js"
+          integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8=" crossOrigin="anonymous"></Script>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">← Back to home</Link>

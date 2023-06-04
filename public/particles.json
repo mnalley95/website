@@ -4,7 +4,7 @@
             "value": 80,
             "density": {
                 "enable": true,
-                "value_area": 800
+                "valueArea": 800
             }
         },
         "color": {
@@ -17,7 +17,7 @@
                 "color": "#000000"
             },
             "polygon": {
-                "nb_sides": 5
+                "nbSides": 5
             },
             "image": {
                 "src": "img/github.svg",
@@ -31,7 +31,7 @@
             "anim": {
                 "enable": false,
                 "speed": 1,
-                "opacity_min": 0.1,
+                "opacityMin": 0.1,
                 "sync": false
             }
         },
@@ -41,11 +41,11 @@
             "anim": {
                 "enable": false,
                 "speed": 40,
-                "size_min": 0.1,
+                "sizeMin": 0.1,
                 "sync": false
             }
         },
-        "line_linked": {
+        "lineLinked": {
             "enable": true,
             "distance": 150,
             "color": "#ffffff",
@@ -58,7 +58,7 @@
             "direction": "none",
             "random": false,
             "straight": false,
-            "out_mode": "out",
+            "outMode": "out",
             "bounce": false,
             "attract": {
                 "enable": false,
@@ -68,7 +68,7 @@
         }
     },
     "interactivity": {
-        "detect_on": "canvas",
+        "detectOn": "canvas",
         "events": {
             "onhover": {
                 "enable": true,
@@ -83,7 +83,7 @@
         "modes": {
             "grab": {
                 "distance": 400,
-                "line_linked": {
+                "lineLinked": {
                     "opacity": 1
                 }
             },
@@ -99,12 +99,12 @@
                 "duration": 0.4
             },
             "push": {
-                "particles_nb": 4
+                "particlesNb": 4
             },
             "remove": {
-                "particles_nb": 2
+                "particlesNb": 2
             }
         }
     },
-    "retina_detect": true
+    "retinaDetect": true
 }
