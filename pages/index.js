@@ -5,6 +5,7 @@ import Layout, { siteTitle } from '../components/layout';
 import Link from 'next/link';
 import Script from 'next/script';
 //import headshot from '../public/headshot.jpg';
+import ParticleBackground from '../components/ParticleBackground';
 
 
 
@@ -14,7 +15,9 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+      <ParticleBackground/>
       <main className={styles.body}>
+
         <img src='/headshot.jpg' alt="My headshot" className={styles.headshot} />
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
@@ -70,14 +73,11 @@ export default function Home() {
           </ul>
         </section>
 
-
-
         <Script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></Script>
         <Script async defer src="https://buttons.github.io/buttons.js"></Script>
 
       </main>
     </Layout>
-
 
   )
 

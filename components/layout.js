@@ -3,13 +3,14 @@ import styles from './layout.module.css';
 //import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
+import ParticleBackground from './ParticleBackground';
 
 export const siteTitle = 'Mark Nalley';
 export const myName = 'Mark Nalley';
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <div id='pagebackground'>
       <Head>
         {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43" />
@@ -27,22 +28,22 @@ export default function Layout({ children, home }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
       </Head>
-      <Script id='particlebackground' src='particles.js'> </Script>
-      <div id="tsparticles">
-        <header className={styles.header}>
 
-          <h1 className={styles.headerH1}> {myName}</h1>
+      <header className={styles.header}>
 
-          <nav>
-            <ul className={styles.navUl}>
-              <li className={styles.navLi}> <Link href='#about'>About</Link></li>
-              <li className={styles.navLi}><Link href='#projects'>Projects</Link></li>
-              <li className={styles.navLi}><Link href='#experience'>Experience</Link> </li>
-              <li className={styles.navLi}><Link href='#contact'>Contact</Link> </li>
-            </ul>
-          </nav>
+        <h1 className={styles.headerH1}> {myName}</h1>
 
-        </header>
+        <nav>
+          <ul className={styles.navUl}>
+            <li className={styles.navLi}> <Link href='#about'>About</Link></li>
+            <li className={styles.navLi}><Link href='#projects'>Projects</Link></li>
+            <li className={styles.navLi}><Link href='#experience'>Experience</Link> </li>
+            <li className={styles.navLi}><Link href='#contact'>Contact</Link> </li>
+          </ul>
+        </nav>
+
+      </header>
+      <div>
         <main>{children}</main>
 
         {/*<!-- particles.js container --> */}
@@ -58,12 +59,9 @@ export default function Layout({ children, home }) {
 
       </div>
 
-
       <footer className={styles.footer}>
       </footer>
-      
+
     </div>
-
-
   );
 };
