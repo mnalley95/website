@@ -58,23 +58,18 @@ export default function Home() {
           <p>Feel free to reach out to me:</p>
           <ul>
             <li>
-              <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="medium"
-                data-theme="dark" data-type="VERTICAL" data-vanity="marknalley" data-version="v1"><a
+              <div><a
                   className="badge-base__link LI-simple-link"
-                  href="https://www.linkedin.com/in/marknalley?trk=profile-badge">LinkedIn</a></div>
+                  href="https://www.linkedin.com/in/marknalley/">LinkedIn</a></div>
             </li>
             <li>
               <Link href="mailto:mnalley95@gmail.com">Email</Link>
             </li>
             <li>
-              <a className="github-button" href="https://github.com/mnalley95" data-show-count="true"
-                aria-label="Follow @your-username on GitHub">@mnalley95</a>
+              <Link href="https://github.com/mnalley95">Github</Link>
             </li>
           </ul>
         </section>
-
-        <Script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></Script>
-        <Script async defer src="https://buttons.github.io/buttons.js"></Script>
 
       </main>
     </Layout>
