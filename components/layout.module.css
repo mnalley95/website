@@ -38,3 +38,11 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}

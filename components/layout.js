@@ -54,8 +54,16 @@ export default function Layout({ children, home }) {
             <Link href="/">← Back to home</Link>
           </div>
         )}
+
+
       </div>
+
+
+      <footer className={styles.footer}>
+      </footer>
+      
     </div>
 
-  )
+
+  );
 };
