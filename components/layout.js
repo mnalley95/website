@@ -12,7 +12,13 @@ export default function Layout({ children, home }) {
   return (
     <div id='pagebackground'>
       <Head>
-        {/* Google tag (gtag.js) */}
+        
+        <meta charSet="UTF-8" />
+        <title>{siteTitle}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+      </Head>
+      {/* Google tag (gtag.js) */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43"
           strategy="afterInteractive"
         />
@@ -24,12 +30,6 @@ export default function Layout({ children, home }) {
             gtag('config', 'G-WKSYHTRV43');
           `}
         </Script>
-        <meta charSet="UTF-8" />
-        <title>{siteTitle}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-
-      </Head>
 
       <header className={styles.header}>
 
