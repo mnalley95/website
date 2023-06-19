@@ -13,15 +13,17 @@ export default function Layout({ children, home }) {
     <div id='pagebackground'>
       <Head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43" />
-        <script>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-WKSYHTRV43');
           `}
-        </script>
+        </Script>
         <meta charSet="UTF-8" />
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
