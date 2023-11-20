@@ -15,7 +15,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <ParticleBackground/>
+      <ParticleBackground />
       <main className={styles.body}>
 
         <img src='/headshot.jpg' alt="My headshot" className={styles.headshot} />
@@ -59,8 +59,8 @@ export default function Home() {
           <ul>
             <li>
               <div><a
-                  className="badge-base__link LI-simple-link"
-                  href="https://www.linkedin.com/in/marknalley/">LinkedIn</a></div>
+                className="badge-base__link LI-simple-link"
+                href="https://www.linkedin.com/in/marknalley/">LinkedIn</a></div>
             </li>
             <li>
               <Link href="mailto:mnalley95@gmail.com">Email</Link>

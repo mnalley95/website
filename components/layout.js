@@ -12,24 +12,24 @@ export default function Layout({ children, home }) {
   return (
     <div id='pagebackground'>
       <Head>
-        
+
         <meta charSet="UTF-8" />
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
       </Head>
       {/* Google tag (gtag.js) */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-WKSYHTRV43');
           `}
-        </Script>
+      </Script>
 
       <header className={styles.header}>
 
@@ -37,10 +37,11 @@ export default function Layout({ children, home }) {
 
         <nav>
           <ul className={styles.navUl}>
-            <li className={styles.navLi}> <Link href='#about'>About</Link></li>
-            <li className={styles.navLi}><Link href='#projects'>Projects</Link></li>
-            <li className={styles.navLi}><Link href='#experience'>Experience</Link> </li>
-            <li className={styles.navLi}><Link href='#contact'>Contact</Link> </li>
+            <li className={styles.navLi}> <Link href='/#about'>About</Link></li>
+            <li className={styles.navLi}><Link href='/#projects'>Projects</Link></li>
+            <li className={styles.navLi}><Link href='/#experience'>Experience</Link> </li>
+            <li className={styles.navLi}><Link href='/#contact'>Contact</Link> </li>
+            <li className={styles.navLi}><Link href='/completions'>Completions</Link> </li>
           </ul>
         </nav>
 
