@@ -27,7 +27,7 @@ export default async function storyTeller(req: NextApiRequest, res: NextApiRespo
             console.log(completion.choices[0].message.content)
             res.status(200).json({ completion: completion.choices[0].message.content });
 
-        } catch (error) {
+        } catch (error: any) {
             console.log(error)
             res.status(500).json({ error: error.message });
 

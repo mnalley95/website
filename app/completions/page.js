@@ -1,10 +1,10 @@
+'use client'
+
 import Head from 'next/head';
 //import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Layout, { siteTitle } from '../components/layout';
+import Layout, { siteTitle } from '../../components/layout';
 import { useRef, useState } from "react";
-
-import ParticleBackground from '../components/ParticleBackground';
 
 
 export default function Completions() {
@@ -42,7 +42,6 @@ export default function Completions() {
         <Layout>
             <Head>
             </Head>
-            <ParticleBackground />
             <main className={styles.body}>
 
                 <section className={styles.section}>

@@ -3,7 +3,6 @@ import styles from './layout.module.css';
 //import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
-import ParticleBackground from './ParticleBackground';
 
 export const siteTitle = 'Mark Nalley';
 export const myName = 'Mark Nalley';
