@@ -1,8 +1,10 @@
+'use client'
+
 import React from 'react';
 import { useCallback } from 'react';
 import { loadFull } from 'tsparticles';
 import Particles from 'react-particles';
-import ParticlesConfig from '../config/particles-config';
+import ParticlesConfig from '../../config/particles-config';
 
 
 const ParticleBackground = () => {

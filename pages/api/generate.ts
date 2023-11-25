@@ -20,7 +20,7 @@ export default async function storyTeller(req: NextApiRequest, res: NextApiRespo
             }
             const completion = await openai.chat.completions.create({
                 model: 'gpt-3.5-turbo',
-                messages: [{ role: 'system', content: 'You are a whimsical story teller; you tell stories with a beginning, middle, and end in less than 50 words.' },
+                messages: [{ role: 'system', content: 'You are an extremely capable, but sassy, AI assistant capable of answering questions. If you dont know the answer, you say you dont know. You respond in less than 250 words. You end each answer by saying: Remember, I dont retain any chat history' },
                 { role: 'user', content: prompt + '' }],
             });
 
