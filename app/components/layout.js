@@ -40,7 +40,7 @@ export default function Layout({ children, home }) {
             <li className={styles.navLi}><Link href='/#projects'>Projects</Link></li>
             <li className={styles.navLi}><Link href='/#experience'>Experience</Link> </li>
             <li className={styles.navLi}><Link href='/#contact'>Contact</Link> </li>
-            {/* <li className={styles.navLi}><Link href='/completions'>Completions</Link> </li>*/}
+            <li className={styles.navLi}><Link href='/completions'>Completions</Link> </li>
           </ul>
         </nav>
 
