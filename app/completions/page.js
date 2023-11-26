@@ -5,9 +5,11 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Layout, { siteTitle } from '../components/layout';
 import { useRef, useState } from "react";
+import { redirect } from 'next/navigation';
 
 
 export default function Completions() {
+    redirect('/')
     const [prompt, setPrompt] = useState('');
     const [completion, setCompletion] = useState('');
     const [loading, setLoading] = useState(false);

@@ -40,18 +40,18 @@ export default function Layout({ children, home }) {
             <li className={styles.navLi}><Link href='/#projects'>Projects</Link></li>
             <li className={styles.navLi}><Link href='/#experience'>Experience</Link> </li>
             <li className={styles.navLi}><Link href='/#contact'>Contact</Link> </li>
-            <li className={styles.navLi}><Link href='/completions'>Completions</Link> </li>
+            {/* <li className={styles.navLi}><Link href='/completions'>Completions</Link> </li>*/}
           </ul>
         </nav>
 
-      </header>
+      </header >
       <div>
         <main>{children}</main>
 
         {/*<!-- particles.js container --> */}
         {/*<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> */}
         <Script id='tsparticles' src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.5/dist/tsparticles.min.js"
-          integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8=" crossOrigin="anonymous"></Script>
+          integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8=" crossOrigin="anonymous" strategy='onReady'></Script>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">← Back to home</Link>
@@ -64,6 +64,6 @@ export default function Layout({ children, home }) {
       <footer className={styles.footer}>
       </footer>
 
-    </div>
+    </div >
   );
 };
