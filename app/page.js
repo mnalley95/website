@@ -1,12 +1,17 @@
+'use client'
+
+// This is a Client Component. It receives data as props and
+// has access to state and effects just like Page components
+// in the `pages` directory.
+
 import Head from 'next/head';
 //import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import Layout, { siteTitle } from '../components/layout';
+import styles from './styles/Home.module.css';
+import Layout, { siteTitle } from './components/layout';
 import Link from 'next/link';
 import Script from 'next/script';
 //import headshot from '../public/headshot.jpg';
-import ParticleBackground from '../components/ParticleBackground';
-
+import ParticleBackground from './components/ParticleBackground';
 
 
 export default function Home() {
@@ -15,7 +20,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <ParticleBackground/>
+      <ParticleBackground />
       <main className={styles.body}>
 
         <img src='/headshot.jpg' alt="My headshot" className={styles.headshot} />
@@ -59,8 +64,8 @@ export default function Home() {
           <ul>
             <li>
               <div><a
-                  className="badge-base__link LI-simple-link"
-                  href="https://www.linkedin.com/in/marknalley/">LinkedIn</a></div>
+                className="badge-base__link LI-simple-link"
+                href="https://www.linkedin.com/in/marknalley/">LinkedIn</a></div>
             </li>
             <li>
               <Link href="mailto:mnalley95@gmail.com">Email</Link>

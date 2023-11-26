@@ -58,62 +58,33 @@
   max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .section {
-    background-color: #505050;
-    width: 75%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 6px;
+  background-color: #505050;
+  width: 75%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 6px;
 }
 
 .h2 {
-    font-size: 24px;
-    margin: 0 0 20px 0;
+  font-size: 24px;
+  margin: 0 0 20px 0;
 }
 
 .body {
-    font-family: 'Roboto', sans-serif;
-    color: #FFF;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
 }
 
 .headshot {
-    display: block;
-    margin: 20px auto;
-    max-width: 15%;
-    height: auto;
-    align-items: center;
-    border-radius: 6px;
+  display: block;
+  margin: 20px auto;
+  max-width: 15%;
+  height: auto;
+  align-items: center;
+  border-radius: 6px;
 
 }
