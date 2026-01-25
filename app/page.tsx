@@ -1,29 +1,28 @@
-'use client'
-
-// This is a Client Component. It receives data as props and
-// has access to state and effects just like Page components
-// in the `pages` directory.
-
-import Head from 'next/head';
-//import Image from 'next/image';
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import styles from './styles/Home.module.css';
-import Layout, { siteTitle } from './components/layout';
+import Layout, { siteTitle } from './components/PageLayout';
 import Link from 'next/link';
-import Script from 'next/script';
-//import headshot from '../public/headshot.jpg';
 import ParticleBackground from './components/ParticleBackground';
 
+export const metadata: Metadata = {
+  title: siteTitle,
+};
 
 export default function Home() {
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
       <ParticleBackground />
       <main className={styles.body}>
 
-        <img src='/headshot.jpg' alt="My headshot" className={styles.headshot} />
+        <Image
+          src='/headshot.jpg'
+          alt="My headshot"
+          width={250}
+          height={250}
+          priority
+          className={styles.headshot}
+        />
         <section id="about" className={styles.section}>
           <h2>About Me</h2>
 

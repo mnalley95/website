@@ -1,18 +1,16 @@
 'use client'
 
-import Head from 'next/head';
-//import Image from 'next/image';
 import styles from '../styles/Home.module.css';
-import Layout, { siteTitle } from '../components/layout';
-import { useRef, useState } from "react";
+import Layout from '../components/PageLayout';
+import { useState } from "react";
 import { redirect } from 'next/navigation';
 
 
 export default function Completions() {
     redirect('/')
-    const [prompt, setPrompt] = useState('');
-    const [completion, setCompletion] = useState('');
-    const [loading, setLoading] = useState(false);
+    const [prompt, setPrompt] = useState<string>('');
+    const [completion, setCompletion] = useState<string>('');
+    const [loading, setLoading] = useState<boolean>(false);
 
     const fetchCompletion = async () => {
         setLoading(true);
@@ -42,8 +40,6 @@ export default function Completions() {
 
     return (
         <Layout>
-            <Head>
-            </Head>
             <main className={styles.body}>
 
                 <section className={styles.section}>

@@ -1,22 +1,18 @@
-import Head from 'next/head';
-import styles from './layout.module.css';
-//import Image from 'next/image';
+import styles from './PageLayout.module.css';
 import Link from 'next/link';
 import Script from 'next/script';
 
 export const siteTitle = 'Mark Nalley';
 export const myName = 'Mark Nalley';
 
-export default function Layout({ children, home }) {
+interface LayoutProps {
+  children: React.ReactNode;
+  home?: boolean;
+}
+
+export default function Layout({ children, home }: LayoutProps) {
   return (
     <div id='pagebackground'>
-      <Head>
-
-        <meta charSet="UTF-8" />
-        <title>{siteTitle}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-      </Head>
       {/* Google tag (gtag.js) */}
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-WKSYHTRV43"
         strategy="afterInteractive"
@@ -51,7 +47,7 @@ export default function Layout({ children, home }) {
         {/*<!-- particles.js container --> */}
         {/*<!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> */}
         <Script id='tsparticles' src="https://cdn.jsdelivr.net/npm/tsparticles@1.17.5/dist/tsparticles.min.js"
-          integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8=" crossOrigin="anonymous" strategy='onReady'></Script>
+          integrity="sha256-Wcr5q//r5yGozjRl+ToXruCoy75vgiApkKsV30aCns8=" crossOrigin="anonymous" strategy='lazyOnload'></Script>
         {!home && (
           <div className={styles.backToHome}>
             <Link href="/">← Back to home</Link>
